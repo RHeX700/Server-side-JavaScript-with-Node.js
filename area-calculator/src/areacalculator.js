@@ -6,14 +6,27 @@ const calculateArea = (choice,side,length,breadth,radius) =>{
     // note that you check the values passed are not null before performing any operation on them
     switch (choice) {
         case 'square':
-            
+            if(side != null || side > 0){
+                return side*side;
+            }else{
+                return -1;
+            }
             break;
         case 'circle':
+            if (radius > 0 || radius != null) {
+                return 3.14 * radius * radius
+            } else {
+                return -1;
+            }
 
-        break
+        break;
         case 'rectangle':
-
-        break
+            if(length != null || length<= 0 || breadth != null || breadth <= 0){
+                return length * breadth;
+            }else {
+                return -1;
+            }
+        break;
     
         default:
             return -1;

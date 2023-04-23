@@ -4,7 +4,7 @@ const calculateArea = require('../src/areacalculator').calculateArea
 
 describe('Area Calculator',()=>{
     it('calculate area square',()=>{
-        expect(calculateArea('square',5)).to.be.equal(20)
+        expect(calculateArea('square',5)).to.be.equal(25)
     })
     it('calculate area rectangle',()=>{
         expect(calculateArea('rectangle',0,4,6,0)).to.be.equal(24)
